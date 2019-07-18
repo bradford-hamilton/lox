@@ -40,7 +40,7 @@ public class GenerateAst {
 
     // The AST classes
     for (String type : types) {
-      String className = type.split(".")[0].trim();
+      String className = type.split(":")[0].trim();
       String fields = type.split(":")[1].trim();
       defineType(writer, baseName, className, fields);
     }
@@ -57,7 +57,7 @@ public class GenerateAst {
     writer.println("  interface Visitor<R> {");
 
     for (String type : types) {
-      String typeName  = type.split(".")[0].trim();
+      String typeName  = type.split(":")[0].trim();
       writer.println("    R visit" + typeName + baseName + "(" + typeName + " " + baseName.toLowerCase() + ");");
     }
 
