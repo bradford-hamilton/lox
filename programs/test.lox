@@ -1,0 +1,15 @@
+func sayHey(name) {
+  print "Hey " + name + " whats up?";
+}
+
+sayHey("bradford");
+sayHey("josce");
+
+var a = "neato";
+var b = "burrito";
+
+func printVars() {
+  print "a = " + a + " and b = " + b;
+}
+
+printVars();
