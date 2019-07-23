@@ -13,3 +13,22 @@ func printVars() {
 }
 
 printVars();
+
+class Person {
+  init(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  fullName() {
+    return this.firstName + " " + this.lastName;
+  }
+
+  describe() {
+    print this.fullName();
+  }
+}
+
+var josce = Person("josce", "james");
+
+josce.describe();

@@ -230,7 +230,7 @@ class Parser {
 
     while (match(OR)) {
       Token operator = previous();
-      Expr right = equality();
+      Expr right = and();
       expr = new Expr.Logical(expr, operator, right);
     }
 
