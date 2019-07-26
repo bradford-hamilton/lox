@@ -1,4 +1,4 @@
-package lox;
+package jlox.lox;
 
 // Creates an unambiguous string representation of the AST nodes
 class Astprinter implements Expr.Visitor<String> {
